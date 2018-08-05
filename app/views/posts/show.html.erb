@@ -1,8 +1,10 @@
- <%= image_tag(@post.image) %>
+  <p><%= flash[:notice] %></p>
+
+ <%= image_tag(@post.image.url) %>
  <p>
   <strong>Caption:</strong>
   <%= @post.caption %> </br>
-  <%= link_to 'Edit', '#' %>
+  <%= link_to 'Edit', edit_post_path %>
   <%= link_to 'Delete', '#' %>
 </p>
 

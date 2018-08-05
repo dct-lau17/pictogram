@@ -1,0 +1,16 @@
+<%= image_tag(@post.image.url) %>
+
+<%= form_for @post do |form| %>
+
+ <%= form.label :image %>
+ <%= form.file_field :image, accept: 'image/png,image/jpeg'%>
+ <%= form.label :caption%>
+ <%= form.text_area :caption %>
+
+<div>
+ <%= link_to '<button type="button">Cancel</button>'.html_safe, posts_path %>
+ <%= form.submit "Update" %>
+<% end %>
+</div>
+
+<p><%= flash[:alert] %></p>
