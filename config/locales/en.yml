@@ -30,4 +30,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  errors:
+    messages:
+      carrierwave_processing_error: "Sorry there was an error uploading your file"
+      carrierwave_integrity_error: "Cannot upload this file type"

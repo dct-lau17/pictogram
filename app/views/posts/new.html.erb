@@ -1,0 +1,11 @@
+
+
+<%= form_for @post do |form| %>
+
+ <%= form.label :image %>
+ <%= form.file_field :image, accept: 'image/png,image/jpeg'%>
+ <%= form.label :caption%>
+ <%= form.text_area :caption %>
+ <%= form.submit "Post Image" %>
+
+<% end %>

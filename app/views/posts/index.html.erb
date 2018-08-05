@@ -1,3 +1,13 @@
 <h1>Pictogram =)</h1>
 
 <%= link_to "New Post", new_post_path %>
+
+<% @posts.each do |post| %>
+
+  <ul>
+    <%= image_tag post.image.url %> </br>
+    <%= post.caption %>
+  </ul>
+
+
+<% end %>
