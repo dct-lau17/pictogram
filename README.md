@@ -1,24 +1,20 @@
-# README
+# Pictogram
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+rails/server
+```
 
-Things you may want to cover:
+Completed:
+- Create post
+- Edit Post
+- View single post
+- View all post
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+TODO:
+- ability to delete images
+- css styling
+- likes
+- users sign up
+- log in/out
+- comments
+- deploy to heroku
