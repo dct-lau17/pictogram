@@ -1,8 +1,10 @@
-<p id="notice"><%= notice %></p>
  <%= image_tag(@post.image) %>
  <p>
   <strong>Caption:</strong>
-  <%= @post.caption %>
+  <%= @post.caption %> </br>
+  <%= link_to 'Edit', '#' %>
+  <%= link_to 'Delete', '#' %>
 </p>
+
 
 <%= link_to 'Back', posts_path %>

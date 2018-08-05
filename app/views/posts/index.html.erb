@@ -1,11 +1,13 @@
 <h1>Pictogram =)</h1>
 
+<p><%= flash[:notice] %></p>
+
 <%= link_to "New Post", new_post_path %>
 
 <% @posts.each do |post| %>
 
   <ul>
-    <%= image_tag post.image.url %> </br>
+    <%= link_to image_tag(post.image.url), post_path(:id => post.id) %> </br>
     <%= post.caption %>
   </ul>
 

@@ -30,7 +30,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  errors:
-    messages:
-      carrierwave_processing_error: "Sorry there was an error uploading your file"
-      carrierwave_integrity_error: "Cannot upload this file type"
+  posts:
+     create:
+       success: "Up up and away!"
+       alert: "Did you forget to add your picture?"
